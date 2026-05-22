@@ -1,4 +1,4 @@
-# Editing your resume site
+# Editing — Taha Ayub's One Pager
 
 A complete walkthrough for editing this site. Bookmark this file.
 
@@ -45,7 +45,7 @@ In the *Selected Client Experience* section, each job is one block:
 
 ## 5. Replace the photo
 
-Just drop a new image into `C:\Users\taha.ayub\Projects\my-website\` **named exactly `photo.jpg`** (overwrite the existing one). No code change needed.
+Just drop a new image into `C:\Users\taha.ayub\Projects\tayub-accenture.github.io\` **named exactly `photo.jpg`** (overwrite the existing one). No code change needed.
 
 - Square-ish photo, 400×400 px or larger looks best
 - JPG or PNG both work
@@ -63,7 +63,7 @@ That's it for local previewing. Iterate as much as you want before publishing.
 Open PowerShell, then run (you can copy-paste all four lines at once):
 
 ```powershell
-cd C:\Users\taha.ayub\Projects\my-website
+cd C:\Users\taha.ayub\Projects\tayub-accenture.github.io
 git add .
 git commit -m "Update resume"
 git push
@@ -71,14 +71,14 @@ git push
 
 GitHub Pages redeploys automatically in ~30–60 seconds. Hard-refresh the live URL with `Ctrl+Shift+R` to see it:
 
-**https://tayub-accenture.github.io/my-website/**
+**https://tayub-accenture.github.io/**
 
 ## Safety net — undo uncommitted changes
 
 If an edit breaks the page and you want to throw away everything you've changed since the last publish:
 
 ```powershell
-cd C:\Users\taha.ayub\Projects\my-website
+cd C:\Users\taha.ayub\Projects\tayub-accenture.github.io
 git restore .
 ```
 
@@ -89,7 +89,7 @@ This snaps every file back to the last committed (live) version. The photo file 
 If you published something bad and want the *live* site to revert to the previous version:
 
 ```powershell
-cd C:\Users\taha.ayub\Projects\my-website
+cd C:\Users\taha.ayub\Projects\tayub-accenture.github.io
 git log --oneline
 ```
 

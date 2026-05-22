@@ -1,6 +1,8 @@
-# Taha Ayub — One-Pager Resume Site
+# Taha Ayub's One Pager
 
 A static, dark-mode, single-page resume site. No build step. Just open `index.html`.
+
+**Live:** https://tayub-accenture.github.io/
 
 ## Files
 
@@ -45,14 +47,14 @@ python -m http.server 8080
 
 ### 2. Push this folder
 
-In PowerShell from `C:\Users\taha.ayub\Projects\my-website`:
+In PowerShell from `C:\Users\taha.ayub\Projects\tayub-accenture.github.io`:
 
 ```powershell
 git init
 git add index.html styles.css README.md
 git commit -m "Initial one-pager resume site"
 git branch -M main
-git remote add origin https://github.com/<your-github-username>/my-website.git
+git remote add origin https://github.com/<your-github-username>/<your-github-username>.github.io.git
 git push -u origin main
 ```
 
@@ -64,12 +66,7 @@ Replace `<your-github-username>` with your actual GitHub handle.
 2. Under **Build and deployment**, set **Source** to **Deploy from a branch**
 3. Branch: `main`, folder: `/ (root)`, then **Save**
 4. Wait ~1 minute. Your URL will be:
-   `https://<your-github-username>.github.io/my-website/`
-
-### 4. (Optional) Root URL trick
-
-If you name the repo exactly `<your-github-username>.github.io`, the site lives at
-`https://<your-github-username>.github.io/` (no `/my-website` suffix).
+   `https://<your-github-username>.github.io/` (root, no path suffix — this repo uses the user-page convention)
 
 ## Updating later
 
